@@ -14,13 +14,13 @@ void cargarNota();
 
 void modificarDatos(alumno *, docente *);
 
-void mostrarDatos(alumno *, docente *, materia *);
+void mostrarDatos(alumno *, docente *);
 
 int main() {
     int op;
     alumno a[3];
     docente d[3];
-    materia m[5] = {materia(101, "Programacion 2"), materia(102, "Laboratorio de computacion"), materia(103, "Fisica 2"), materia(104, "Estadistica"), materia(105, "Algebra")};
+    materia m[3];
     for (int i = 0; i < 3; ++i) {
         a[i] = alumno();
         d[i] = docente();
@@ -53,7 +53,7 @@ int main() {
                 modificarDatos(a, d);
                 break;
             case 6:
-                mostrarDatos(a, d, m);
+                mostrarDatos(a, d);
                 break;
             case 7:
                 cout << "Saliendo del programa" << endl;
@@ -67,7 +67,7 @@ int main() {
     return 0;
 }
 
-void mostrarDatos(alumno *al, docente *doc, materia *m) {
+void mostrarDatos(alumno *al, docente *doc) {
     int x;
     cout << "Ingrese DNI: ";
     cin >> x;
@@ -133,17 +133,11 @@ void alta(alumno *al, docente *doc) {
 void inscribirMateria(alumno *al, materia *ma) {
     int x, codigo;
     std::string nombre;
-    for (int i = 0; i < 5; ++i) {
-        cout << "Codigo:" << ma[i].getCodigoMateria() << "Nombre: " << ma[i].getNombreMateria() << endl;
-    }
     cout << "Ingrese DNI: ";
     cin >> x;
     for (int i = 0; i < 3; ++i) {
         if ((al[i].getDni() == x)) {
-            cout << "Ingrese el codigo de la materia: " << endl;
-            cin >> codigo;
-            al[i].M[i].setCodigoMateria(codigo);
-            al[i].M[i].setNombreMateria(nombre);
+            al[i].inscrpcionMateria(ma[i]);
         } else {
             cout << "El dni no coincide con el de ningun alumno" << endl;
         }

@@ -16,11 +16,24 @@ persona::persona(int _dni, std::string _nombre, std::string _apellido, std::stri
 
 }
 
-alumno::alumno() :alumno(0,"","","",0,""){}
+alumno::alumno() : alumno(0,"","","",0,""){}
 alumno::alumno(int _dni, std::string _nombre, std::string _apellido, std::string _mail, int _edad, std::string _carrera)
         : persona(_dni, _nombre, _apellido, _mail) {
     edad = _edad;
     carrera = _carrera;
+}
+
+void alumno::inscrpcionMateria(const materia&) {
+    for (int i = 0; i < 3; ++i) {
+        int codigo;
+        std::string nombre;
+        cout << "Ingrese el codigo de la materia: " << endl;
+        cin >> codigo;
+        cout << "Ingrese el nombre de la materia: " << endl;
+        M[i].setNombreMateria(nombre);
+        M[i].setCodigoMateria(codigo);
+    }
+
 }
 
 docente::docente() : docente(0, "", "", "", ""){}
@@ -79,12 +92,6 @@ std::string persona::getMail() {
 }
 int persona::getDni() {
     return dni;
-}
-
-void persona::inscrpcionMateria(materia) {
-    for (int i = 0; i < 3; ++i) {
-
-    }
 }
 
 std::string alumno::getCarrera() {

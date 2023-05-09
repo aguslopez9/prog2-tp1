@@ -45,9 +45,6 @@ public:
     void mostrarPersona();
     void modificarPersona(int, std::string, std::string, std::string);
 
-    materia M[3];
-    void inscrpcionMateria(materia);
-
 };
 
 class alumno : public persona {
@@ -63,6 +60,9 @@ public:
     std::string getCarrera();
     void mostrarAlumno();
     void modificarAlumno(int, std::string, std::string, std::string, std::string, int);
+
+    materia M[3];
+    void inscrpcionMateria(const materia&);
 
 };
 

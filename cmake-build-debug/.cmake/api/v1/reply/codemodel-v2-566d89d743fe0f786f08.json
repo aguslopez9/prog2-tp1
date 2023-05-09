@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/agust/CLionProjects/TP1/cmake-build-debug",
-		"source" : "C:/Users/agust/CLionProjects/TP1"
+		"build" : "C:/Users/agust/CLionProjects/TP1/prog2-tp1/cmake-build-debug",
+		"source" : "C:/Users/agust/CLionProjects/TP1/prog2-tp1"
 	},
 	"version" : 
 	{
