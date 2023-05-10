@@ -1,21 +1,4 @@
 # ninja log v5
-10	517	7052631304402885	CMakeFiles/TP1.dir/gestion.cpp.obj	2ea036334a924743
-5	526	7052631304503226	CMakeFiles/TP1.dir/main.cpp.obj	f2dce5ae73a423e9
-1113	1591	7052565083043847	TP1.exe	610743038e09b48
-23	1050	7052842514012037	CMakeFiles/TP1.dir/gestion.cpp.obj	2a59460e7e2a0e2b
-8	1065	7052842514170180	CMakeFiles/TP1.dir/main.cpp.obj	b95e7abb87ccad5
-27	1860	7052879918625297	CMakeFiles/TP1.dir/gestion.cpp.obj	2a59460e7e2a0e2b
-12	1887	7052879918877017	CMakeFiles/TP1.dir/main.cpp.obj	b95e7abb87ccad5
-7	857	7052885199307599	CMakeFiles/TP1.dir/main.cpp.obj	b95e7abb87ccad5
-8	1562	7052885828745443	CMakeFiles/TP1.dir/gestion.cpp.obj	2a59460e7e2a0e2b
-7	1367	7052886044616254	CMakeFiles/TP1.dir/main.cpp.obj	b95e7abb87ccad5
-7	952	7052886745664777	CMakeFiles/TP1.dir/main.cpp.obj	b95e7abb87ccad5
-9	843	7052887020122142	CMakeFiles/TP1.dir/main.cpp.obj	b95e7abb87ccad5
-18	1449	7053442385488794	CMakeFiles/TP1.dir/main.cpp.obj	b95e7abb87ccad5
-5	510	7053443121496599	CMakeFiles/TP1.dir/gestion.cpp.obj	2a59460e7e2a0e2b
-11	1082	7053445491869032	CMakeFiles/TP1.dir/gestion.cpp.obj	2a59460e7e2a0e2b
-4	1117	7053445492237235	CMakeFiles/TP1.dir/main.cpp.obj	b95e7abb87ccad5
-5	882	7053450830403075	CMakeFiles/TP1.dir/main.cpp.obj	b95e7abb87ccad5
-11	885	7053450830423611	CMakeFiles/TP1.dir/gestion.cpp.obj	2a59460e7e2a0e2b
-4	515	7053454539672771	CMakeFiles/TP1.dir/main.cpp.obj	b95e7abb87ccad5
-9	529	7053454539795771	CMakeFiles/TP1.dir/gestion.cpp.obj	2a59460e7e2a0e2b
+4	620	7053468164481991	CMakeFiles/TP1.dir/gestion.cpp.obj	2a59460e7e2a0e2b
+6	552	7053463466399087	CMakeFiles/TP1.dir/main.cpp.obj	b95e7abb87ccad5
+621	771	7053468165949103	TP1.exe	610743038e09b48

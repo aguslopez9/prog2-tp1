@@ -44,10 +44,10 @@ int main() {
                 inscribirMateria(a, m);
                 break;
             case 3:
-                //anotarTitular();
+                anotarTitular();
                 break;
             case 4:
-                //cargarNota();
+                cargarNota();
                 break;
             case 5:
                 modificarDatos(a, d);
@@ -131,7 +131,7 @@ void alta(alumno *al, docente *doc) {
 }
 
 void inscribirMateria(alumno *al, materia *ma) {
-    int x, codigo;
+    int x;
     std::string nombre;
     cout << "Ingrese DNI: ";
     cin >> x;
@@ -142,15 +142,31 @@ void inscribirMateria(alumno *al, materia *ma) {
             cout << "El dni no coincide con el de ningun alumno" << endl;
         }
     }
+}
 
+void anotarTitular(docente *doc, materia *ma) {
+    int x;
+    std::string nombre;
+    cin >> x;
+    for (int i = 0; i < 3; ++i) {
+        if ((doc[i].getDni()==x)){
+            doc[i].anotarEnMateria();
+        }else{
+            cout << "El dni no coincide con el de ningun docente" << endl;
+        }
+    }
 };
 
-void anotarTitular() {
-
-};
-
-void cargarNota() {
-
+void cargarNota(alumno *al, materia *ma) {
+    int x, codigo, nota;
+    cin >> x;
+    for (int i = 0; i < 3; ++i) {
+        if ((al[i].getDni() == x)&&(ma[i].getCodigoMateria()==codigo)){
+            al[i].cargarNota(nota);
+        }else{
+            cout << "El dni no coincide con el de ningun docente" << endl;
+        }
+    }
 };
 
 void modificarDatos(alumno *al, docente *doc) {

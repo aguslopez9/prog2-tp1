@@ -94,28 +94,10 @@ int persona::getDni() {
     return dni;
 }
 
-std::string alumno::getCarrera() {
-    return carrera;
-}
-int alumno::getEdad() {
-    return edad;
-}
+
 
 std::string docente::getTitulo() {
     return titulo;
 }
 
-materia::materia(int _codigo, std::string _nombre) {
-    codigo = _codigo;
-    nombre = _nombre;
-    nota = -1;
-}
-std::string materia::getNombreMateria() {
-    return nombre;
-}
-int materia::getCodigoMateria() {
-    return codigo;
-}
-int materia::getNota() {
-    return nota;
-}
+
